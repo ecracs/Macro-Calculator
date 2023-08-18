@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="descritiopn" content="Welcome to the most extraordinary hotel in Boston Massachusetts">
+        <meta name="keywords" content="hotel, boston hotel,new engalnd hotel"> 
+        <link rel="stylesheet" href="css/style.css">
+        <title>Macro Calculator and Menu | Calculator</title>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <div class="container">
+                    <h1 class="logo"><a href="index.html">Ethan Chand's Macro Calculator and Menu</a></h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Menu</a></li>
+                        <li><a class="current" href="contact.html">Calculator</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section id="about-info" class="bg-light py-3">
+            <div class="container">
+                <div class="info-left">
+                    <h1 class="l-heading">The Calculator</h1>
+                    <p>While training hard is essential to all fitness goals, healthy foods and a disciplined diet ultimately fuel your body for intense training sessions. Healthy foods and diet also allow your body to better recover.</p>
+                    <p>The menu is here to take the stress off finding healthy food. Below are some food options that are healthy and will allow you to achieve your goals. Each different listed food item pairs well with every other listed item. Finding healthy foods has never been so easy!</p>
+                </div>
+                <div class="info-right">
+                    <img src="./img/protein.jpg" alt="hotel">
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="py-3">
+            <label>Female:
+                <input id="female" type="radio" name="gender" onchange="calsPerDay()">
+              </label>
+              <label>Male:
+                <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+              </label>
+              <label>Age:
+                <input id="age" type="number" oninput="calsPerDay()" value="50">
+                years
+              </label>
+              <label>Height:
+                <input id="height" type="number" oninput="calsPerDay()" value="70">
+                in inches (12 inches=1 foot)
+              </label>
+              <label>Weight:
+                <input id="weight" type="number" oninput="calsPerDay()" value="225">
+                in pounds
+              </label>
+              <label onclick="calsPerDay">
+                Base metabolic rate: <span id="totalCals"></span> kcal per day
+              </label>
+        </section>
+        <footer id="main-footer">
+            <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
